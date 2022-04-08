@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Order summary card</title>
+  <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
@@ -20,25 +21,33 @@
 <body>
 
   <main>
-    <div class="container row">
-      <div class="summary-component">
-        <div class="summary-component__header">
-          <img src="./images/illustration-hero.svg" alt="">
-        </div>
-        <div class="summary-component__body">
-          <div class="body-title">Order Summary</div>
-          <div class="body-description">  You can now listen to millions of songs, audiobooks, and podcasts on any 
-            device anywhere you like!</div>
-          <div class="body-icon"><img src="./images/icon-music.svg" alt=""></div>
-          <div class="body-plan"> Annual Plan $59.99/year</div>
-          <div class="body-change">Change</div>
-        </div>
-        <div class="order-component__footer">
-          <div class="proceed-btn">Proceed to Payment</div>
-          <div class="cancel-btn">Cancel Order</div>
+    <article class="container">
+      <!-- Component Header Start -->
+      <header>
+        <img class="header__img" src="./images/illustration-hero.svg" alt="Order Summary">
+      </header>
+      <!-- Component Header End -->
+
+      <!-- Component Body Start -->
+      <div class="body">
+        <h1 class="body__title">Order Summary</h1>
+        <p class="body__desc">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+
+        <div class="body__payment">
+          <img class="body__payment__icon" src="./images/icon-music.svg" alt="Music">
+          <h2 class="body__payment__h2"> Annual Plan <span class="body__payment__price">$59.99/year</span></h2>
+          <a class="body__payment__edit" href="#">Change</a>
         </div>
       </div>
-    </div>
+      <!-- Component Body End -->
+
+      <!-- Component Footer Start -->
+      <footer>
+        <button class="footer__payBtn">Proceed to Payment</button>
+        <a href="#" class="footer_cancelBtn">Cancel Order</a>
+      </footer>
+      <!-- Component Footer End -->
+    </article>
   </main>
   
   <div class="attribution">

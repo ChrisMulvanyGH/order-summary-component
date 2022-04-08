@@ -16,7 +16,114 @@
     box-sizing: border-box;
 }
 
+/* -- HTML Element Classes Start -- */
+
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 1rem;
+    background-color: var(--paleBlue);
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.container {
+    padding: 4.4375em 1.5em;
+    max-width: var(--mobileWidth);
+    margin: 0 auto;
+    background-color: white;
+}
+
+header {
+    text-align: center;
+}
+
+.header__img {
+    border-radius: 1.2em 1.2em 0 0;
+}
+
+.body__payment {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 0.875em;
+}
+
+.body {
+    padding: 1.5em 1.5em 0.9em 1.5em;
+}
+
+.body__title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--darkBlue);
+    text-align: center;
+}
+
+.body__desc {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--desaturatedBlue);
+}
+
+.body__payment__icon {
+    width: 48px;
+    margin-right: 0.9em;
+}
+
+.body__payment__h2 {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 0.875rem;
+    font-weight: 900;
+    color: var(--darkBlue);
+}
+
+.body__payment__edit {
+    margin-left: auto;
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: var(--brightBlue);
+}
+
+.body__payment__price {
+    font-weight: 500;
+    color: var(--desaturatedBlue);
+}
+
+footer {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__payBtn {
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: var(--brightBlue);
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+
+.footer_cancelBtn {
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    color: var(--desaturatedBlue);
 }
