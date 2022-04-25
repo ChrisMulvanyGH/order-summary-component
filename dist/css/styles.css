@@ -37,6 +37,10 @@ ul {
   list-style-type: none;
 }
 
+h2 {
+  font-size: 0.875em;
+}
+
 .container {
   width: 90%;
   max-width: 375px;
