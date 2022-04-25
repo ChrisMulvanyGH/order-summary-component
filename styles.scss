@@ -12,6 +12,7 @@ $assetPath: "../../images/";
 
 $paleBlue: hsl(225, 100%, 94%);
 $brightBlue: hsl(245, 75%, 52%);
+$brightBlueLight: hsl(245, 40, 52);
 $veryPaleBlue: hsl(225, 100%, 98%);
 $desaturatedBlue: hsl(224, 23%, 55%);
 $darkBlue: hsl(223, 47%, 23%);
@@ -131,13 +132,16 @@ ul {
                 font-weight: $weight-medium;
             }
 
-            .edit {
+            .edit a, .edit a:visited {
                 font-family: 'Red Hat Display', sans-serif; 
                 font-size: 0.875rem;
                 font-weight: $weight-bold;
                 color: $darkBlue;
             }
 
+            .edit a:hover {
+                color: $brightBlueLight;
+            }
         }
     }
 
@@ -162,12 +166,20 @@ ul {
             margin-bottom: 1.75em;
         }
 
+        .payment-btn:hover {
+            background-color: $brightBlueLight;
+        }
+
         .cancel-btn {
             font-family: 'Red Hat Display', sans-serif; 
             font-size: 0.875rem;
             font-weight: $weight-bold;
             color: $desaturatedBlue;
             text-decoration: none;
+        }
+
+        .cancel-btn:hover {
+            color: $brightBlue;
         }
     }
 }
@@ -181,4 +193,32 @@ ul {
 
 .attribution a {
     color: $brightBlue; 
+}
+
+/* Media Queries */
+
+@media (max-width: 1440px) {
+    
+    .card {
+        max-width: $desktopWidth;
+    }
+
+    body {
+        background-image: url(#{$assetPath}/pattern-background-desktop.svg);
+    }
+
+    .card__footer .payment-btn:hover {
+        background-color: pink;
+    }
+}
+
+@media (min-width: 1440px) {
+    .card {
+        max-width: $desktopWidth;
+    }
+
+    body {
+        background-image: url(#{$assetPath}/pattern-background-desktop.svg);
+        background-repeat: repeat-x;
+    }
 }
