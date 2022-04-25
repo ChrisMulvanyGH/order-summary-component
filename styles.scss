@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
+/* 
+    font-family: 'Red Hat Display', sans-serif; 
+    Weights: 500, 700, 900
+
+*/
+
 /* Variables */
 
 $paleBlue: hsl(225, 100%, 94%);
@@ -7,6 +13,12 @@ $brightBlue: hsl(245, 75%, 52%);
 $veryPaleBlue: hsl(225, 100%, 98%);
 $desaturatedBlue: hsl(224, 23%, 55%);
 $darkBlue: hsl(223, 47%, 23%);
+
+$font-size-16: 1rem;    /*-16px-*/
+
+$weight-medium: 500;
+$weight-bold: 700;
+$weight-black: 900;
 
 $mobileWidth: 375px;
 $desktopWidth: 90em;
@@ -16,21 +28,143 @@ $desktopWidth: 90em;
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin-top: 70px;
+    margin-top: 5em;
     background-image: url(./images/pattern-background-mobile.svg);
-    background-color: orange;
+    background-color: $veryPaleBlue;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     max-width: $mobileWidth;
     margin: 0 auto;
+}
 
-    .hero {
-        
+.card {
+    overflow: hidden;
+    background-color: #FFF;
+    border-radius: 1.25em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+    &__hero {
+        min-height: 10em;
+
+        img {
+            border-radius: 1.25em 1.25em 0 0;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2.375em;
+
+        &-title {
+            font-family: 'Red Hat Display', sans-serif; 
+            font-size: 1.25em;
+            font-weight: $weight-black;
+            text-align: center;
+            color: $darkBlue;
+            margin-bottom: 1.5em;
+        }
+
+        &-description {
+            max-width: 70%;
+            font-family: 'Red Hat Display', sans-serif; 
+            font-size: 0.875rem;
+            font-weight: $weight-medium;
+            text-align: center;
+            color: $desaturatedBlue;
+            margin-bottom: 1.75em;
+        }
+
+        &__sub {
+            width: 17.4375em;
+            height: 5.0625em;
+            padding-left: 1em;
+            padding-right: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $veryPaleBlue;
+            border-radius: 0.6875em;
+            margin-bottom: 1.5em;
+
+            .icon {
+                width: 3em;
+                height: 3em;
+            }
+
+            .plan {
+                font-family: 'Red Hat Display', sans-serif; 
+                font-size: 0.875rem;
+                font-weight: $weight-bold;
+            }
+            .price {
+                display: block;
+                font-family: 'Red Hat Display', sans-serif; 
+                font-size: 0.875rem;
+                font-weight: $weight-medium;
+            }
+
+            .edit {
+                font-family: 'Red Hat Display', sans-serif; 
+                font-size: 0.875rem;
+                font-weight: $weight-bold;
+                color: $darkBlue;
+            }
+
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2.375em;
+
+        .payment-btn {
+            min-width: 17.4375em;
+            min-height: 3.125em;
+            background-color: $brightBlue;
+            box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+            border: none;
+            border-radius: 0.6875em;
+            font-family: 'Red Hat Display', sans-serif; 
+            font-size: 0.875rem;
+            font-weight: $weight-bold;
+            color: $paleBlue;
+            margin-bottom: 1.75em;
+        }
+
+        .cancel-btn {
+            font-family: 'Red Hat Display', sans-serif; 
+            font-size: 0.875rem;
+            font-weight: $weight-bold;
+            color: $desaturatedBlue;
+            text-decoration: none;
+        }
     }
 }
+
+
+
+
