@@ -17,8 +17,9 @@
 }
 
 body {
+  width: 100%;
   margin-top: 5em;
-  background-image: url(./images/pattern-background-mobile.svg);
+  background-image: url(/images/pattern-background-mobile.svg);
   background-color: #f5f7ff;
   background-repeat: no-repeat;
   font-family: 'Red Hat Display', sans-serif;
