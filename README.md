@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub/mobile-first-flexbox-css-order-summary-card-S1W3ALNSc)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub/mobile-first-flexbox-css-order-summary-card-S1W3ALNSc)
 - Live Site URL: [Github Pages](https://chrismulvanygh.github.io/order-summary-component/)
 
 ## My process
